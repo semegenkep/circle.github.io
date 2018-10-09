@@ -1,0 +1,126 @@
+.test{
+    display: none;
+}
+.crumbs li{
+    display: inline-block;
+}
+.crumbs li::after{
+    content: "→";
+}
+.crumbs :last-child::after{
+    content: "";
+}
+.crumbs li a{
+    text-decoration: underline;
+}
+.starting-day{
+    padding-top: 60px;
+    text-align: center;
+}
+/*---form---*/
+.showModal-my{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.4);
+    padding: 8px 40px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.showModal-my:hover{
+    box-shadow: inset 0px 0px 1px black;
+}
+.modal-my{
+    z-index: 1;
+    position: fixed;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: rgba(0,0,0,0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+.modal-my.show-my{
+    visibility: visible;
+    opacity: 1;
+}
+.modal-my.show-my .modal-dialog-my{
+    top:50%;
+}
+.modal-dialog-my{
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 50px 100px;
+    background-color: white;
+    font-family: 'Rubik', sans-serif;
+    width: 480px;
+    max-width: 90%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 100px black;
+    position: relative;
+    transition-duration: 0.5s;
+}
+.modal-dialog-my .close-my{
+    cursor: pointer;
+    position: absolute;
+    top:-13px;
+    right: -13px;
+    background-color: black;
+    border: 3px solid white;
+    box-shadow: 0px 0px 1px 2px black;
+    color:white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-my .title-my{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.modal-my .message-my{
+    margin: 10px 0 ;
+}
+.modal-my input{
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid rgba(0,0,0,0.4);
+    width: 90%;
+    margin: 5px 0;
+}
+.modal-my button{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.4);
+    padding: 8px 40px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.modal-my button:hover{
+    box-shadow: inset 0px 0px 1px black;
+}
+.modal-my .info-my{
+    line-height: 1.3em;
+}
+/*------*/
+.due-date-fix{
+    width:50%;
+}
+
+@media screen and (min-width:320px) and (max-width:575px) {
+    .due-date-hide{
+        display: none;
+    }
+}
