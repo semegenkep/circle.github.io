@@ -7831,9 +7831,7 @@ body {
     margin: 10px 0 ;
 }
 .modal-my input{
-    border-radius: 5px;
     padding: 5px;
-    border: 1px solid rgba(0,0,0,0.4);
     width: 90%;
     margin: 5px 0;
 }
